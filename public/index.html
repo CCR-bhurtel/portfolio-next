@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Ccr's personal portfolio site" />
+    <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../src/images/logo_background.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <title>Dev-Porfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="fb-root"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+    <script>
+      const toggleActiveState = (e) => {
+        document
+          .querySelectorAll('.nav-link')
+          .forEach((el) => el.classList.remove('active'));
+
+        e.classList.add('active');
+        document.querySelector('.nav-collection').classList.remove('active');
+        document.querySelector('body').style.overflow = 'scroll';
+      };
+
+      document.addEventListener('scroll', () => {
+        const Y = window.scrollY;
+        const W = window.scrollX;
+        let thresholdHeight;
+
+        if (W <= 1440) {
+          thresholdHeight = 1650;
+        } else if (W < 1024) {
+          thresholdHeight = 1809;
+        } else if (W < 425) {
+          thresholdHeight = 2350;
+        }
+        if (Y > thresholdHeight) {
+          const skillBar = document.querySelectorAll('.skill_level');
+          skillBar.forEach((el) => {
+            if (!el.classList.contains('animation')) {
+              const skillPercentage = el.classList[el.classList.length - 1];
+              el.classList.add('animation');
+              el.classList.add(`animation${skillPercentage}`);
+            }
+          });
+        }
+
+        const home = document.querySelector('#homelink');
+        const about = document.querySelector('#aboutlink');
+        const contact = document.querySelector('#contactlink');
+
+        const e = document.querySelector('nav');
+
+        let toggleStyle = (e) => {
+          e.style.position = 'fixed';
+          e.style.background = '#2a363f';
+
+          e.style.zIndex = 100000;
+          e.style.left = '0';
+          e.style.top = '0';
+
+          e.style.marginRight = '20px';
+          e.style.paddingLeft = '20px';
+          e.style.justifyContent = 'space-around';
+        };
+
+        if (Y >= 0 && Y < 860) {
+          toggleActiveState(home);
+        } else if (Y > 863 && Y < 3812) {
+          toggleActiveState(about);
+        }
+
+        if (Y >= 840) {
+          toggleStyle(e);
+        } else {
+          e.style = null;
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener('DOMContentLoaded', (event) => {
+        $('.num').counterUp({ delay: 10, time: 1000, trigerOnce: true });
+      });
+    </script>
+  </body>
+</html>
