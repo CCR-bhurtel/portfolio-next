@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[7],{324:function(t,o,p){"use strict";p.r(o),o.default=p.p+"static/media/natours.712eb78a.png"}}]);
-//# sourceMappingURL=7.97003d08.chunk.js.map

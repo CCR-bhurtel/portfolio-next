@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[4],{321:function(i,p,t){"use strict";t.r(p),p.default=t.p+"static/media/dailyReceipe.ca9c9a49.png"}}]);
-//# sourceMappingURL=4.41684a41.chunk.js.map
