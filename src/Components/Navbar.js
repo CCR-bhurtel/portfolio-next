@@ -1,15 +1,17 @@
-import React from "react";
-import logo from "../images/brand-logo.png";
+import { useEffect } from 'react';
+import logo from '../images/brand-logo.png';
+import React from 'react';
 
 function Navbar() {
+  useEffect(() => {}, []);
   const toggleActiveState = (e) => {
     document
-      .querySelectorAll(".nav-link")
-      .forEach((el) => el.classList.remove("active"));
+      .querySelectorAll('.nav-link')
+      .forEach((el) => el.classList.remove('active'));
 
-    e.classList.add("active");
-    document.querySelector(".nav-collection").classList.remove("active");
-    document.querySelector("body").style.overflow = "scroll";
+    e.classList.add('active');
+    document.querySelector('.nav-collection').classList.remove('active');
+    document.querySelector('body').style.overflow = 'scroll';
   };
   return (
     <div id="navcontainer" className="container">
@@ -19,10 +21,10 @@ function Navbar() {
         </a>
         <div className="hamburger-menu">
           <i
-            style={{ marginRight: "1rem" }}
+            style={{ marginRight: '1rem' }}
             onClick={(e) => {
-              document.querySelector(".nav-collection").classList.add("active");
-              document.querySelector("body").style.overflow = "hidden";
+              document.querySelector('.nav-collection').classList.add('active');
+              document.querySelector('body').style.overflow = 'hidden';
             }}
             className="fas fa-bars"
           ></i>
@@ -31,9 +33,9 @@ function Navbar() {
           <i
             onClick={(e) => {
               document
-                .querySelector(".nav-collection")
-                .classList.remove("active");
-              document.querySelector("body").style.overflow = "scroll";
+                .querySelector('.nav-collection')
+                .classList.remove('active');
+              document.querySelector('body').style.overflow = 'scroll';
             }}
             className="fas fa-times"
           ></i>
@@ -97,7 +99,7 @@ function Navbar() {
                 href="https://www.fiverr.com/shishrbhurtel1?up_rollout=true"
                 target="blank"
               >
-                {" "}
+                {' '}
                 Hire me
               </a>
             </div>
@@ -106,9 +108,9 @@ function Navbar() {
         <div
           onClick={(e) => {
             document
-              .querySelector(".nav-collection")
-              .classList.remove("active");
-            document.querySelector("body").style.overflow = "scroll";
+              .querySelector('.nav-collection')
+              .classList.remove('active');
+            document.querySelector('body').style.overflow = 'scroll';
           }}
           className="backdrop"
         ></div>
@@ -117,4 +119,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default React.memo(Navbar);

@@ -15,24 +15,21 @@ function Projects() {
       description:
         'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
       image: 'travelix.png',
+      link: 'https://technext.github.io/travelix/index.html',
     },
     {
       projectName: 'Natours',
       description:
         'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
       image: 'natours.png',
+      link: 'https://natours.netlify.app/',
     },
     {
-      projectName: '3D Shoe',
-      description:
-        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
-      image: '3d_shoe.png',
-    },
-    {
-      projectName: 'DailyReceipe',
+      projectName: 'DailyReceipe Blog',
       description:
         'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
       image: 'dailyReceipe.png',
+      link: 'https://dailyrecipesblog.com/',
     },
   ]);
   const [minLength, setMinLength] = useState(4);
@@ -69,4 +66,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default React.memo(Projects);

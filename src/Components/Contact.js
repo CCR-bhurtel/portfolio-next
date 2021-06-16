@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import vector from "../images/vector_contact.png";
-import dev from "../images/developer_sitting.png";
-import Alert from "./Alert";
+import React, { useState } from 'react';
+import vector from '../images/vector_contact.png';
+import dev from '../images/developer_sitting.png';
+import Alert from './Alert';
 
 function Contact() {
   const [showAlert, setShowAlert] = useState(false);
 
   const submit_form = (e) => {
     e.preventDefault();
-    e.target.name.value = "";
-    e.target.email.value = "";
-    e.target.phone.value = "";
-    e.target.message.value = "";
+    e.target.name.value = '';
+    e.target.email.value = '';
+    e.target.phone.value = '';
+    e.target.message.value = '';
 
     setShowAlert(true);
     setTimeout(() => setShowAlert(false), 2000);
@@ -88,4 +88,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default React.memo(Contact);

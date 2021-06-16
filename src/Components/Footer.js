@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "../images/brand-logo.png";
+import React from 'react';
+import logo from '../images/brand-logo.png';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
@@ -40,4 +40,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default React.memo(Footer);

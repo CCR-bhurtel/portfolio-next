@@ -1,9 +1,9 @@
-import React from "react";
-import backend from "../images/icons/backend.svg";
-import frontend from "../images/icons/frontend.svg";
-import logos from "../images/icons/logos.svg";
-import uiux from "../images/icons/uiux.svg";
-import webapp from "../images/icons/webapp.svg";
+import React from 'react';
+import backend from '../images/icons/backend.svg';
+import frontend from '../images/icons/frontend.svg';
+import logos from '../images/icons/logos.svg';
+import uiux from '../images/icons/uiux.svg';
+import webapp from '../images/icons/webapp.svg';
 
 function Specializations() {
   return (
@@ -39,7 +39,7 @@ function Specializations() {
                   for serving react
                 </p>
               </div>
-            </div>{" "}
+            </div>{' '}
             <div className="field">
               <div className="icon">
                 <img src={uiux} alt="desktop-icon" />
@@ -51,7 +51,7 @@ function Specializations() {
                   prototyping
                 </p>
               </div>
-            </div>{" "}
+            </div>{' '}
             <div className="field">
               <div className="icon">
                 <img src={webapp} alt="desktop-icon" />
@@ -63,7 +63,7 @@ function Specializations() {
                   backend and firestore, mongodb as db.
                 </p>
               </div>
-            </div>{" "}
+            </div>{' '}
             <div className="field">
               <div className="icon">
                 <img src={logos} alt="desktop-icon" />
@@ -83,4 +83,4 @@ function Specializations() {
   );
 }
 
-export default Specializations;
+export default React.memo(Specializations);

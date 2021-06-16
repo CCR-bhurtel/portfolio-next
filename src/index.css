@@ -257,12 +257,15 @@ nav {
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background: url('./images/pexels-daria-obymaha-1684149.jpg');
+  background-image: linear-gradient(
+    to right,
+    #2a363f,
+    #4f5c63,
+    #778488,
+    #a3afb1,
+    #d2dbdb
+  );
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   z-index: -2;
 }
 
