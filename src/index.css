@@ -35,6 +35,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.loading_screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
