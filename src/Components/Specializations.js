@@ -23,7 +23,7 @@ function Specializations() {
               <div className="field-content">
                 <h4 className="field-title">WEB FRONTEND</h4>
                 <p className="field-description">
-                  HTML/CSS, javascript, react.js, redux.js,materialize Ui for
+                  HTML/CSS, javascript, angular.js, react.js, redux.js, materialize Ui for
                   frontend development of website and app
                 </p>
               </div>
@@ -47,7 +47,7 @@ function Specializations() {
               <div className="field-content">
                 <h4 className="field-title">UI/UX DESIGN</h4>
                 <p className="field-description">
-                  Landing page , user flow, wireframing, mobile app design,
+                  Landing page, user flow, wireframing, mobile app design,
                   prototyping
                 </p>
               </div>
@@ -59,7 +59,7 @@ function Specializations() {
               <div className="field-content">
                 <h4 className="field-title">WEBAPP DEV.</h4>
                 <p className="field-description">
-                  Progressive web apps with react native and firebase/node in
+                  Progressive web apps with reactJS, angularJs and firebase/node in
                   backend and firestore, mongodb as db.
                 </p>
               </div>
