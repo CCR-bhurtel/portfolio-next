@@ -96,7 +96,7 @@ class App extends React.Component {
   render() {
     if (this.state.loading) {
       return (
-        <div class="loading_screen">
+        <div className="loading_screen">
           <img src={loading} alt="Loading" />
         </div>
       );

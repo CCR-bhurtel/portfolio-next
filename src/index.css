@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -747,12 +748,36 @@ footer i {
 
 /* .........................Projects.............. */
 .projects {
-  padding-top: 2rem;
+  padding: 2rem 0;
   position: relative;
   width: 100%;
   background-color: #252934;
-  min-height: fit-content;
+
+  /* min-height: fit-content; */
 }
+
+.projects::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(20% at right 70%);
+}
+.projects::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at 10% 10%);
+}
+
 .project-title {
   margin-top: 10px;
   text-align: center;
@@ -779,53 +804,6 @@ footer i {
   flex-wrap: wrap;
   padding-top: 30px;
 }
-.card {
-  max-width: 350px;
-  height: 235px;
-  position: relative;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-  transition: 0.2s ease-in-out;
-  background: #fff;
-}
-.card:hover {
-  height: 500px;
-}
-
-.imgBx {
-  position: relative;
-  width: 310px;
-  height: 260px;
-  top: -60px;
-  left: 20px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-.imgBx img {
-  width: 100%;
-  border-radius: 4px;
-  height: 100%;
-}
-.card .content {
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  visibility: hidden;
-  transition: 0.2s ease-in-out;
-}
-.card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -5px;
-}
-.card:hover .imgBx {
-  top: 0;
-}
 
 .plink button {
   margin-top: 10px;
@@ -849,9 +827,9 @@ footer i {
   outline: none;
   border: none;
   text-decoration: underline;
-  color: #60b7f6;
+  color: #fff;
   cursor: pointer;
-  font-size: medium;
+  font-size: 1.4rem;
 }
 /* .section-head {
   animation: slideFromRight 1s ease-in 0s 1 forwards;
@@ -868,6 +846,97 @@ footer i {
   }
 } */
 
+/*  -------------------------GLASS_CARD--------------- */
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 10 !important;
+}
+
+.cardContainer .card {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(56, 16, 16, 0.05);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 10;
+  backdrop-filter: blue(5px);
+}
+
+.cardContainer .card .cardContent {
+  margin-top: 0px;
+  transform: translateY(100px);
+  opacity: 0;
+  margin-top: 40px;
+  padding: 30px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardContainer .card:hover .cardContent {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.cardContainer .card:hover .nameFront {
+  display: none;
+}
+.card .nameFront {
+  position: absolute;
+  text-align: center;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  padding: 300px;
+  z-index: 10;
+}
+.cardContent h2 {
+  position: absolute;
+  text-align: center;
+  top: -80px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+.cardContent h3 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+.cardContent p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.cardContent a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 /* --------------------------------------------------Breakpoints--------------------------------------------------------- */
 @media screen and (max-width: 320px) {
   .skillname {
@@ -876,14 +945,14 @@ footer i {
 }
 
 @media screen and (min-width: 768px) {
-  .card {
+  /* .card {
     min-width: 400px;
     height: 315px;
   }
   .imgBx {
     width: 360px;
     height: 300px;
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
   /* For card */
@@ -1077,6 +1146,7 @@ footer i {
     margin-top: -2rem;
   }
 }
+
 @media screen and (max-width: 1080px) {
   .form-image {
     display: none;

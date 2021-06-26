@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Card from './Card';
+import GlassCard from './GlassCard';
 
 function Projects() {
   const [projects, setProjects] = useState([
@@ -13,28 +14,28 @@ function Projects() {
     {
       projectName: 'Travelix',
       description:
-        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
       image: 'travelix.png',
       link: 'https://technext.github.io/travelix/index.html',
     },
     {
       projectName: 'Natours',
       description:
-        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
       image: 'natours.png',
       link: 'https://natours.netlify.app/',
     },
     {
       projectName: 'DailyReceipe Blog',
       description:
-        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
       image: 'dailyReceipe.png',
       link: 'https://dailyrecipesblog.com/',
     },
     {
       projectName: 'Tour Nepal',
       description:
-        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
       image: 'tourNepal.png',
       link: 'https://www.toursnepal.com/',
     },
@@ -53,7 +54,7 @@ function Projects() {
     {
       projectName: '3D Shoe',
       description:
-        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
       image: '3d_shoe.png',
       link: 'https://reverent-northcutt-850f52.netlify.app/',
     },
@@ -74,7 +75,9 @@ function Projects() {
 
       <div className="pcontainer">
         {newProjects.map((project, index) => {
-          return <Card key={index} projectDetails={project} />;
+          return (
+            <GlassCard key={index} projectDetails={{ ...project, index }} />
+          );
         })}
       </div>
       {projectLength === minLength && (
