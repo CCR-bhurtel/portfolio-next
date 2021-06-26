@@ -8,13 +8,16 @@ function Contact() {
 
   const submit_form = (e) => {
     e.preventDefault();
-    e.target.name.value = '';
-    e.target.email.value = '';
-    e.target.phone.value = '';
-    e.target.message.value = '';
 
-    setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 2000);
+    setTimeout(() => {
+      setShowAlert(true);
+      e.target.name.value = '';
+      e.target.email.value = '';
+      e.target.phone.value = '';
+      e.target.message.value = '';
+
+      setTimeout(() => setShowAlert(false), 2000);
+    }, 3000);
   };
   return (
     <div id="contact" className="contact">

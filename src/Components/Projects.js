@@ -31,6 +31,32 @@ function Projects() {
       image: 'dailyReceipe.png',
       link: 'https://dailyrecipesblog.com/',
     },
+    {
+      projectName: 'Tour Nepal',
+      description:
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+      image: 'tourNepal.png',
+      link: 'https://www.toursnepal.com/',
+    },
+    {
+      projectName: 'Animated_Landing',
+      description: 'Simple landing page with some amazing animatons',
+      image: 'miro.png',
+      link: 'https://nifty-borg-8bef88.netlify.app/',
+    },
+    {
+      projectName: 'Landing Page',
+      description: 'Landing Page for a hiking site, ',
+      image: 'landing_page.png',
+      link: 'https://quirky-neumann-4fd4ce.netlify.app/',
+    },
+    {
+      projectName: '3D Shoe',
+      description:
+        'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid! Assumenda quia cumque amet voluptates!',
+      image: '3d_shoe.png',
+      link: 'https://reverent-northcutt-850f52.netlify.app/',
+    },
   ]);
   const [minLength, setMinLength] = useState(4);
 

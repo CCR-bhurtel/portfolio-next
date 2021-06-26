@@ -64,7 +64,7 @@ function About() {
               <div className="skill-percent">60%</div>
             </div>{' '}
             <div className="skillset firebase">
-              <div className="skillname">Firebase</div>
+              <div className="skillname">Angular</div>
               <div className="skill_level firebase 70"></div>
               <div className="skill-percent">70%</div>
             </div>{' '}

@@ -257,7 +257,7 @@ nav {
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     #2a363f,
     #4f5c63,
@@ -353,7 +353,14 @@ nav {
 .counting-sec {
   padding: 20px 0;
   min-width: 100%;
-  background: linear-gradient(90deg, #08c096, #2a363f);
+  background-image: linear-gradient(
+    to right,
+    #2a363f,
+    #4f5c63,
+    #778488,
+    #a3afb1,
+    #d2dbdb
+  );
   display: flex;
   align-items: center;
 }
@@ -375,7 +382,7 @@ nav {
   font-size: 90px;
   color: #fff;
 }
-.num {
+.number {
   font-size: 50px;
   margin: 20px 0;
 }
@@ -387,7 +394,7 @@ nav {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 #about .container {
@@ -773,7 +780,7 @@ footer i {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   background: #fff;
 }
 .card:hover {
@@ -801,13 +808,12 @@ footer i {
   text-align: center;
   color: #111;
   visibility: hidden;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .card:hover .content {
   visibility: visible;
   opacity: 1;
   margin-top: -5px;
-  transition-delay: 0.3s;
 }
 .card:hover .imgBx {
   top: 0;

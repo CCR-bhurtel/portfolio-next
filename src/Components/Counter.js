@@ -7,25 +7,25 @@ function Counter() {
         <div className="inner-width">
           <div className="col">
             <i className="fas fa-coffee"></i>
-            <div className="num">300</div>
+            <div className="number">500</div>
             Cups Of Coffee
           </div>
 
           <div className="col">
             <i className="fas fa-briefcase"></i>
-            <div className="num">57</div>
+            <div className="number">110</div>
             Completed Projects
           </div>
 
           <div className="col">
             <i className="fas fa-users"></i>
-            <div className="num">110</div>
+            <div className="number">100</div>
             Happy Customers
           </div>
 
           <div className="col">
             <i className="fas fa-star"></i>
-            <div className="num">96</div>
+            <div className="number">96</div>
             Full-Star Reviews
           </div>
         </div>
