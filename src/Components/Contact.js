@@ -72,7 +72,7 @@ function Contact() {
                   placeholder="Contact No. (Optional)"
                 />
               </div>
-              <div className="input-group">
+              <div className="input-group textarea">
                 <textarea
                   name="message"
                   id="message"
@@ -82,7 +82,9 @@ function Contact() {
                   required
                 ></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <button className="btn btn-primary" type="submit">
+                Submit
+              </button>
             </form>
           </div>
         </div>

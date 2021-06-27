@@ -605,7 +605,7 @@ nav {
   width: 100%;
 }
 .form {
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 
   display: flex;
@@ -614,25 +614,29 @@ nav {
   position: relative;
   right: 120px;
   top: 100px;
-  min-width: 25vw;
+  width: 500px;
 }
 form {
-  padding: 2em 4em 2em 2em;
+  padding: 50px 40px;
   width: 100% !important;
   height: 100%;
 }
 form input {
-  height: 40px;
+  height: 50px;
 }
 form input,
 form textarea {
-  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 15px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   padding: 10px 20px;
   outline: none;
   border: none;
-  border-radius: 8px;
   margin-top: 20px;
+  border-radius: 8px;
+}
+textarea::placeholder,
+input::placeholder {
+  font-family: 'Poppins';
 }
 form input:focus,
 form textarea:focus {
@@ -856,7 +860,7 @@ footer i {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  /* width: 1200px; */
   flex-wrap: wrap;
   z-index: 10 !important;
 }
@@ -1198,6 +1202,7 @@ footer i {
 @media screen and (max-width: 425px) {
   .cardContainer .card {
     width: 90%;
+    height: 80%;
   }
   .cardContainer {
     margin-right: 30px;
@@ -1231,6 +1236,9 @@ footer i {
   }
   .form {
     min-width: 90vw !important;
+  }
+  form {
+    padding: 30px 20px;
   }
 
   .container {
@@ -1275,9 +1283,7 @@ footer i {
   .hire-link {
     display: block;
   }
-  .form {
-    padding-right: 1.5rem;
-  }
+
   .sa-link {
     height: 3rem;
     padding: 5px;
