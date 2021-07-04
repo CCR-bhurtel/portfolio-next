@@ -2,22 +2,54 @@ import React, { useState } from 'react';
 import vector from '../images/vector_contact.png';
 import dev from '../images/developer_sitting.png';
 import Alert from './Alert';
+import * as emailjs from 'emailjs-com';
+import { set } from 'lodash';
 
 function Contact() {
   const [showAlert, setShowAlert] = useState(false);
+  const [alert, setAlert] = useState({
+    message: 'Message sent successfully',
+    type: 'error',
+  });
 
-  const submit_form = (e) => {
+  const submit_form = async (e) => {
     e.preventDefault();
 
-    setTimeout(() => {
+    try {
+      let res = await emailjs.sendForm(
+        'service_2lr2vmn',
+        'template_5wntkvr',
+        e.target,
+        'user_xKjnEiz2TrzHygDYVtChk'
+      );
+      if (res.status == 200) {
+        setAlert({
+          ...alert,
+          message: 'Message sent successfully',
+          type: 'success',
+        });
+        setShowAlert(true);
+        e.target.name.value = '';
+        e.target.email.value = '';
+        e.target.phone.value = '';
+        e.target.message.value = '';
+      } else {
+        setAlert({
+          ...alert,
+          message: 'Error sending email',
+          type: 'error',
+        });
+        setShowAlert(true);
+      }
+    } catch (err) {
+      setAlert({
+        ...alert,
+        message: 'Error sending email',
+        type: 'error',
+      });
       setShowAlert(true);
-      e.target.name.value = '';
-      e.target.email.value = '';
-      e.target.phone.value = '';
-      e.target.message.value = '';
-
-      setTimeout(() => setShowAlert(false), 2000);
-    }, 3000);
+    }
+    setTimeout(() => setShowAlert(false), 2000);
   };
   return (
     <div id="contact" className="contact">
@@ -35,9 +67,7 @@ function Contact() {
             <img src={dev} alt="Developer" />
           </div>
           <div className="form">
-            {showAlert && (
-              <Alert message="Message Sent Successfully" type="success" />
-            )}
+            {showAlert && <Alert message={alert.message} type={alert.type} />}
             <form
               onSubmit={submit_form}
               action=""

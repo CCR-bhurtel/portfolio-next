@@ -648,7 +648,7 @@ form textarea {
 }
 
 form button {
-  width: 50%;
+  width: 40%;
   padding: 10px 10px;
   margin-top: 20px;
   color: white;
@@ -656,11 +656,13 @@ form button {
   border-radius: 8px;
   border: none;
   outline: none;
-  transition: all 3s;
+  transition: all;
 }
 form button:hover {
   cursor: pointer;
-  opacity: 50%;
+  border: 2px solid #08c096;
+  background: none;
+  color: #000;
 }
 .slidefromleft {
   animation: Slide_From_Left;
@@ -730,23 +732,27 @@ footer i {
   margin: 0 auto;
   top: 10px;
 
-  width: 10rem;
+  width: 15rem;
 }
 .alert-container {
   position: relative;
   min-width: 100%;
   height: 100%;
   color: #fff;
-  padding: 1rem;
+  padding: 10px 15px;
+
   display: flex;
 }
 
 .success {
-  min-width: 100%;
+  width: 120px;
   background-color: #08c096;
 }
 
-.alert-container .error {
+.error {
+  width: 120px;
+  min-height: 100%;
+
   background-color: #ce3a46;
 }
 
@@ -872,7 +878,7 @@ footer i {
   margin: 30px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -880,7 +886,7 @@ footer i {
   border-top: 1px solid rgba(56, 16, 16, 0.05);
   border-left: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 10;
-  backdrop-filter: blue(5px);
+  backdrop-filter: blur(5px);
 }
 
 .cardContainer .card .cardContent {
@@ -908,8 +914,8 @@ footer i {
   font-size: 4em;
   color: rgba(255, 255, 255, 0.2);
   pointer-events: none;
-  padding: 300px;
   z-index: 10;
+  max-width: 100%;
 }
 .cardContent h2 {
   position: absolute;

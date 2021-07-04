@@ -26,7 +26,7 @@ function Projects() {
       link: 'https://natours.netlify.app/',
     },
     {
-      projectName: 'DailyReceipe Blog',
+      projectName: 'Receipe Blog',
       description:
         'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
       image: 'dailyReceipe.png',
@@ -40,7 +40,7 @@ function Projects() {
       link: 'https://www.toursnepal.com/',
     },
     {
-      projectName: 'Animated_Landing',
+      projectName: 'Animated Landing',
       description: 'Simple landing page with some amazing animatons',
       image: 'miro.png',
       link: 'https://nifty-borg-8bef88.netlify.app/',

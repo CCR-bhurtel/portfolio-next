@@ -60,6 +60,7 @@ class App extends React.Component {
         const home = document.querySelector('#homelink');
         const about = document.querySelector('#aboutlink');
         const contact = document.querySelector('#contactlink');
+        const project = document.querySelector('#project');
 
         const e = document.querySelector('nav');
 
@@ -78,10 +79,9 @@ class App extends React.Component {
 
         if (Y >= 0 && Y < 860) {
           toggleActiveState(home);
-        } else if (Y > 863 && Y < 3812) {
+        } else if (Y > 863 && Y < 1392) {
           toggleActiveState(about);
         }
-
         if (Y >= 840) {
           toggleStyle(e);
         } else {
