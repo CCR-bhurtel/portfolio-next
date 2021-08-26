@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[10],{332:function(t,i,o){"use strict";o.r(i),i.default=o.p+"static/media/travelix.4abd030a.png"}}]);
-//# sourceMappingURL=10.a7a48c31.chunk.js.map

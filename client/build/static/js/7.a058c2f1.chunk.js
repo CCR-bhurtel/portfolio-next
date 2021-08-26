@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[7],{329:function(o,t,i){"use strict";i.r(t),t.default=i.p+"static/media/miro.103a3b99.png"}}]);
-//# sourceMappingURL=7.a058c2f1.chunk.js.map

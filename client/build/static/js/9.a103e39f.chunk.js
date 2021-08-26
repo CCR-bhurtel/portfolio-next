@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[9],{331:function(t,o,p){"use strict";p.r(o),o.default=p.p+"static/media/tourNepal.42290a1a.png"}}]);
-//# sourceMappingURL=9.a103e39f.chunk.js.map

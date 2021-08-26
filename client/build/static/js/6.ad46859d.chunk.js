@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[6],{328:function(p,t,i){"use strict";i.r(t),t.default=i.p+"static/media/landing_page.b7a2096e.png"}}]);
-//# sourceMappingURL=6.ad46859d.chunk.js.map

@@ -1,2 +1,0 @@
-(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[3],{325:function(o,t,p){"use strict";p.r(t),t.default=p.p+"static/media/3d_shoe.6094ca1a.png"}}]);
-//# sourceMappingURL=3.b409d06c.chunk.js.map
