@@ -27,7 +27,9 @@ function Navbar() {
               document.querySelector('body').style.overflow = 'hidden';
             }}
             className="fas fa-bars"
-          ></i>
+          >
+            {/* <div className="bar"></div> */}
+          </i>
         </div>
         <ul className="nav-collection">
           <i
@@ -38,7 +40,13 @@ function Navbar() {
               document.querySelector('body').style.overflow = 'scroll';
             }}
             className="fas fa-times"
-          ></i>
+          >
+            {/* <div style={{ transform: 'rotate(45deg)' }} className="bar"></div>
+            <div
+              style={{ transform: 'rotate(-45deg)', marginTop: '-2px' }}
+              className="bar"
+            ></div> */}
+          </i>
 
           <li className="nav-item">
             <a

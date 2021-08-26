@@ -102,6 +102,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 0px;
 }
 
 .nav-item:not(:last-child) {
@@ -985,6 +986,13 @@ footer i {
     margin-left: -50vw;
     max-height: 100vh;
   }
+  .nav-item .nav-link {
+    margin-left: 1000px;
+    transition: all 5s ease-in-out;
+  }
+  .nav-collection.active > .nav-item .nav-link {
+    margin-left: 0px !important;
+  }
 
   .header-content .buttons {
     flex-direction: column;
@@ -997,6 +1005,7 @@ footer i {
     margin-left: 0;
     margin-top: 10px;
   }
+
   .nav-collection.active {
     min-height: 100vh;
     transition: all 0.5s ease-in;
@@ -1005,6 +1014,7 @@ footer i {
 
     margin-left: 0;
   }
+
   .nav-collection.active > .fa-times {
     display: block;
   }
@@ -1034,9 +1044,9 @@ footer i {
     display: block;
   }
 
-  .nav-item {
+  /* .nav-item {
     margin: 0 !important;
-  }
+  } */
   .nav-item:not(:last-child) {
     margin-bottom: 30px;
   }

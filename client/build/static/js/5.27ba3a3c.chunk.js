@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-portfolio"]=this["webpackJsonpmy-portfolio"]||[]).push([[5],{327:function(o,t,p){"use strict";p.r(t),t.default=p.p+"static/media/fanorona.3b677dfd.png"}}]);
+//# sourceMappingURL=5.27ba3a3c.chunk.js.map
