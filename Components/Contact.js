@@ -3,7 +3,8 @@ import vector from '../images/vector_contact.png';
 import dev from '../images/developer_sitting.png';
 import Alert from './Alert';
 import * as emailjs from 'emailjs-com';
-import { set } from 'lodash';
+import Image from 'next/image';
+
 
 function Contact() {
   const [showAlert, setShowAlert] = useState(false);
@@ -64,7 +65,7 @@ function Contact() {
       <div className="contact-body">
         <div className="contact-section">
           <div className="form-image">
-            <img src={dev} alt="Developer" />
+            <Image src={dev} alt="Developer" />
           </div>
           <div className="form">
             {showAlert && <Alert message={alert.message} type={alert.type} />}

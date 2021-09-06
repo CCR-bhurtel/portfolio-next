@@ -4,6 +4,7 @@ import frontend from '../images/icons/frontend.svg';
 import logos from '../images/icons/logos.svg';
 import uiux from '../images/icons/uiux.svg';
 import webapp from '../images/icons/webapp.svg';
+import Image from 'next/image';
 
 function Specializations() {
   return (
@@ -18,19 +19,19 @@ function Specializations() {
           <div className="section-content">
             <div className="field">
               <div className="icon">
-                <img src={frontend} alt="desktop-icon" />
+                <Image  src={frontend} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEB FRONTEND</h4>
                 <p className="field-description">
-                  HTML/CSS, javascript, angular.js, react.js, redux.js, materialize Ui for
-                  frontend development of website and app
+                  HTML/CSS, javascript, angular.js, react.js, redux.js,
+                  materialize Ui for frontend development of website and app
                 </p>
               </div>
             </div>
             <div className="field">
               <div className="icon">
-                <img src={backend} alt="desktop-icon" />
+                <Image  src={backend} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEB BACKEND</h4>
@@ -42,7 +43,7 @@ function Specializations() {
             </div>{' '}
             <div className="field">
               <div className="icon">
-                <img src={uiux} alt="desktop-icon" />
+                <Image  src={uiux} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">UI/UX DESIGN</h4>
@@ -54,19 +55,19 @@ function Specializations() {
             </div>{' '}
             <div className="field">
               <div className="icon">
-                <img src={webapp} alt="desktop-icon" />
+                <Image  src={webapp} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEBAPP DEV.</h4>
                 <p className="field-description">
-                  Progressive web apps with reactJS, angularJs and firebase/node in
-                  backend and firestore, mongodb as db.
+                  Progressive web apps with reactJS, angularJs and firebase/node
+                  in backend and firestore, mongodb as db.
                 </p>
               </div>
             </div>{' '}
             <div className="field">
               <div className="icon">
-                <img src={logos} alt="desktop-icon" />
+                <Image  src={logos} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">Illustration/logo</h4>

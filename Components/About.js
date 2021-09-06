@@ -1,5 +1,6 @@
 import React from 'react';
 import ccr from '../images/photo_Cropped.jpg';
+import Image from 'next/image';
 
 function About() {
   console.log();
@@ -13,7 +14,7 @@ function About() {
         <div className="about-content">
           <div className="about-left">
             <div className="my-image-container">
-              <img src={ccr} alt="" />
+              <Image src={ccr} alt="cceer" />
             </div>
             <h3 className="about-text-head">Who's this guy?</h3>
             <p className="about-text">

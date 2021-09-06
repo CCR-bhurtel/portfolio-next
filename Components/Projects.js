@@ -12,6 +12,12 @@ function Projects() {
       link: 'https://fanorona-game.netlify.app',
     },
     {
+      projectName: 'ROLACON',
+      description:
+        'Rolacon, is an audit firm in nepal, delivering accounting and finance needs for your business including bookkeeping, business and financial planning, auditing and tax consulting, company registration. ',
+      link: 'http://www.rolacon.com',
+    },
+    {
       projectName: 'Travelix',
       description:
         'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
@@ -64,7 +70,7 @@ function Projects() {
   const [projectLength, setProjectLength] = useState(minLength);
   const newProjects = projects.slice(0, projectLength);
 
-  const showMore = () => setProjectLength(8);
+  const showMore = () => setProjectLength(projects.length);
   const showLess = () => setProjectLength(minLength);
   return (
     <div className="projects" id="projects">

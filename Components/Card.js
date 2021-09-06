@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
+
 
 // import fanaroma from '../images/projects/travelix.png';
 
@@ -11,7 +13,7 @@ function Card({ projectDetails }) {
     return (
       <div className="card">
         <div className="imgBx">
-          <img src={image.default} alt="Image" />
+          <Image src={image.default} alt="Image" />
         </div>
         <div className="content">
           <h2 className="ptitle">{projectDetails.projectName}</h2>

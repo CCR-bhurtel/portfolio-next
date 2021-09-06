@@ -4,6 +4,7 @@ import ccr from '../images/photo_Cropped.jpg';
 import arrow from '../images/arrow.png';
 import Particles from 'react-particles-js';
 import init from './Typewriter';
+import Image from 'next/image';
 
 class Header extends React.Component {
   componentDidMount() {
@@ -16,12 +17,11 @@ class Header extends React.Component {
           <Navbar />
           <div className="header-content">
             <div className="my-image-container">
-              <img className="myimg" src={ccr} alt="Me" />
+              <Image className="myimg" src={ccr} alt="Me" />
             </div>
 
             <h3 className="header-text">
               <div className="firstLine">
-                {' '}
                 Hello, I'm <span className="coloured">SHISHIR BHURTEL</span>,
               </div>
               <br />
@@ -37,7 +37,7 @@ class Header extends React.Component {
             <div className="buttons">
               <a href="#projects">
                 <button className="btn arrow-btn">
-                  See My Works <img src={arrow} alt="arrow" />
+                  See My Works <Image src={arrow} alt="arrow" />
                 </button>
               </a>
               <a

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import Tilt from 'react-parallax-tilt';
+// import Tilt from 'react-parallax-tilt';
+
 
 function GlassCard(props) {
   const { index, projectName, description, link } = props.projectDetails;
   return (
     <div className="cardContainer">
-      <Tilt>
+      
         <div className="card">
           <h2 className="nameFront">{projectName}</h2>
 
@@ -18,7 +19,6 @@ function GlassCard(props) {
             </a>
           </div>
         </div>
-      </Tilt>
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import logo from '../images/brand-logo.png';
 import React from 'react';
+import Image from 'next/image';
+
 
 function Navbar() {
   useEffect(() => {}, []);
@@ -17,7 +19,7 @@ function Navbar() {
     <div id="navcontainer" className="container">
       <nav>
         <a href="#" className="brand-logo">
-          <img src={logo} alt="Logo" />
+          <Image src={logo} alt="Logo" />
         </a>
         <div className="hamburger-menu">
           <i

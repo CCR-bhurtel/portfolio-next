@@ -1,15 +1,17 @@
 import React from 'react';
-import About from './Components/About';
+import About from './About';
 
 import { toast } from 'react-toastify';
 
-import Contact from './Components/Contact';
-import Counter from './Components/Counter';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import Projects from './Components/Projects';
-import Specializations from './Components/Specializations';
-import loading from './images/loading.gif';
+import Contact from './Contact';
+import Counter from './Counter';
+import Footer from './Footer';
+import Header from './Header';
+import Projects from './Projects';
+import Specializations from './Specializations';
+import loading from '../images/loading.gif';
+import Head from 'next/head';
+import Image from 'next/image';
 
 toast.configure();
 
@@ -97,12 +99,44 @@ class App extends React.Component {
     if (this.state.loading) {
       return (
         <div className="loading_screen">
-          <img src={loading} alt="Loading" />
+          <Image src={loading} alt="Loading" />
         </div>
       );
     } else {
       return (
         <div>
+          <Head>
+            <meta charset="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <meta name="theme-color" content="#000000" />
+            <meta
+              name="description"
+              content="Personal portfolio site, Shishir Bhutel (cceer bhurtel) is a mern stack developer at gigatech, Nepal. He is a freelance full stack developer at fiverr,  with good knowledge of Node.js, react.js, express.js, mongodb, sql, microservices etc"
+            />
+            <meta name="robots" content="noindex, nofollow" />
+            <meta name="googlebot" content="noindex, nofollow" />
+            <meta
+              name="keywords"
+              content="shishir, bhurtel, developer, web developer, full stack developer, mern stack developer, node.js, react.js, react, node, cceer bhurtel, cceer, ccr"
+            />
+            <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
+            <link
+              rel="icon"
+              type="image/png"
+              href="../src/images/logo_background.png"
+            />
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            />
+
+            <title>
+              Shishir Bhurel | Full Stack Developer -Web Developer at gigatech
+            </title>
+          </Head>
           <Header />
           <Specializations />
           <About />

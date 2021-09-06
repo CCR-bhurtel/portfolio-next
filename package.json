@@ -1,20 +1,29 @@
 {
-  "name": "portfolio_heroku",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "postbuild": "npm install && npm install --prefix client && npm run build --prefix client",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "heroku-postbuild": "next build"
   },
   "engines": {
     "node": "14.17.0"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
+    "emailjs-com": "^3.2.0",
+    "lodash": "^4.17.21",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-parallax-tilt": "^1.5.57",
+    "react-particles-js": "^3.5.3",
+    "react-toastify": "^8.0.2"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
   }
 }
