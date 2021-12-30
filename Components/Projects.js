@@ -25,6 +25,13 @@ function Projects() {
       link: "https://www.goaly.hu/",
     },
     {
+      projectName: "Electrostatics",
+      description:
+        "A simple elctrostatics model with various modules such as induction and conduction, circular motion of charge, dipole moment etc. It is built in p5.js, vanilla javascript, html and css.",
+      image: "fanorona.png",
+      link: "https://electrostatics.netlify.app/",
+    },
+    {
       projectName: "Travelix",
       description:
         "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",

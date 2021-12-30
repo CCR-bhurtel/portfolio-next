@@ -1,10 +1,10 @@
-import React from 'react';
-import Navbar from './Navbar';
-import ccr from '../images/photo_Cropped.jpg';
-import arrow from '../images/arrow.png';
-import Particles from 'react-particles-js';
-import init from './Typewriter';
-import Image from 'next/image';
+import React from "react";
+import Navbar from "./Navbar";
+import ccr from "../images/photo_Cropped.jpg";
+import arrow from "../images/arrow.png";
+import Particles from "react-particles-js";
+import init from "./Typewriter";
+import Image from "next/image";
 
 class Header extends React.Component {
   componentDidMount() {
@@ -26,8 +26,8 @@ class Header extends React.Component {
               </div>
               <br />
               <div className="secondLine">
-                {' '}
-                A{' '}
+                {" "}
+                A{" "}
                 <span
                   className="txt-type"
                   data-words='["Developer", "Designer", "FreeLancer"]'
@@ -44,7 +44,7 @@ class Header extends React.Component {
                 href="https://www.fiverr.com/shishrbhurtel1?up_rollout=true"
                 target="blank"
               >
-                {' '}
+                {" "}
                 <button className="btn hire-btn">Hire me</button>
               </a>
             </div>
@@ -58,7 +58,7 @@ class Header extends React.Component {
                 value: 60,
                 density: {
                   enable: true,
-                  type: 'inside',
+                  type: "inside",
                   value_area: 1000,
                 },
               },
