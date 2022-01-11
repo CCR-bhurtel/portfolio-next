@@ -9,6 +9,11 @@ import Image from "next/image";
 class Header extends React.Component {
   componentDidMount() {
     init();
+    this.props.setLoading_states({
+      ...this.props.loading_states,
+      headerLoaded: true,
+    });
+    console.log("header", this.props);
   }
   render() {
     return (

@@ -1,12 +1,19 @@
-import React from 'react';
-import backend from '../images/icons/backend.svg';
-import frontend from '../images/icons/frontend.svg';
-import logos from '../images/icons/logos.svg';
-import uiux from '../images/icons/uiux.svg';
-import webapp from '../images/icons/webapp.svg';
-import Image from 'next/image';
+import React, { useEffect } from "react";
+import backend from "../images/icons/backend.svg";
+import frontend from "../images/icons/frontend.svg";
+import logos from "../images/icons/logos.svg";
+import uiux from "../images/icons/uiux.svg";
+import webapp from "../images/icons/webapp.svg";
+import Image from "next/image";
 
-function Specializations() {
+function Specializations(props) {
+  useEffect(() => {
+    console.log("specialization", props);
+    props.setLoading_states((props) => ({
+      ...props.loading_states,
+      specializationsLoaded: true,
+    }));
+  }, []);
   return (
     <section id="spe" className="specializations">
       <div className="layer"></div>
@@ -19,7 +26,7 @@ function Specializations() {
           <div className="section-content">
             <div className="field">
               <div className="icon">
-                <Image  src={frontend} alt="desktop-icon" />
+                <Image src={frontend} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEB FRONTEND</h4>
@@ -31,7 +38,7 @@ function Specializations() {
             </div>
             <div className="field">
               <div className="icon">
-                <Image  src={backend} alt="desktop-icon" />
+                <Image src={backend} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEB BACKEND</h4>
@@ -40,10 +47,10 @@ function Specializations() {
                   for serving react
                 </p>
               </div>
-            </div>{' '}
+            </div>{" "}
             <div className="field">
               <div className="icon">
-                <Image  src={uiux} alt="desktop-icon" />
+                <Image src={uiux} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">UI/UX DESIGN</h4>
@@ -52,10 +59,10 @@ function Specializations() {
                   prototyping
                 </p>
               </div>
-            </div>{' '}
+            </div>{" "}
             <div className="field">
               <div className="icon">
-                <Image  src={webapp} alt="desktop-icon" />
+                <Image src={webapp} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEBAPP DEV.</h4>
@@ -64,10 +71,10 @@ function Specializations() {
                   in backend and firestore, mongodb as db.
                 </p>
               </div>
-            </div>{' '}
+            </div>{" "}
             <div className="field">
               <div className="icon">
-                <Image  src={logos} alt="desktop-icon" />
+                <Image src={logos} alt="desktop-icon" />
               </div>
               <div className="field-content">
                 <h4 className="field-title">Illustration/logo</h4>

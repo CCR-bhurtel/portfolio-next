@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ccr from "../images/photo_Cropped.jpg";
 
 import Image from "next/image";
 
-function About() {
+function About(props) {
   console.log();
+  useEffect(() => {
+    props.setLoading_states((props) => ({
+      ...props.loading_states,
+      aboutLoaded: true,
+    }));
+  }, []);
   return (
     <section id="about">
       <div className="container">

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import GlassCard from "./GlassCard";
 
-function Projects() {
+function Projects(props) {
   const [projects, setProjects] = useState([
     {
       projectName: "Fanorona Game",
@@ -79,6 +79,13 @@ function Projects() {
 
   const showMore = () => setProjectLength(projects.length);
   const showLess = () => setProjectLength(minLength);
+  useEffect(() => {
+    console.log("projects", props);
+    props.setLoading_states((props) => ({
+      ...props.loading_states,
+      projectsLoaded: true,
+    }));
+  }, []);
   return (
     <div className="projects" id="projects">
       <div className="project-title">

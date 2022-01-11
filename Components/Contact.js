@@ -1,52 +1,58 @@
-import React, { useState } from 'react';
-import vector from '../images/vector_contact.png';
-import dev from '../images/developer_sitting.png';
-import Alert from './Alert';
-import * as emailjs from 'emailjs-com';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import vector from "../images/vector_contact.png";
+import dev from "../images/developer_sitting.png";
+import Alert from "./Alert";
+import * as emailjs from "emailjs-com";
+import Image from "next/image";
 
-
-function Contact() {
+function Contact(props) {
   const [showAlert, setShowAlert] = useState(false);
   const [alert, setAlert] = useState({
-    message: 'Message sent successfully',
-    type: 'error',
+    message: "Message sent successfully",
+    type: "error",
   });
 
+  useEffect(() => {
+    console.log("contact", props);
+    props.setLoading_states((props) => ({
+      ...props.loading_states,
+      contactsLoaded: true,
+    }));
+  }, []);
   const submit_form = async (e) => {
     e.preventDefault();
 
     try {
       let res = await emailjs.sendForm(
-        'service_2lr2vmn',
-        'template_5wntkvr',
+        "service_2lr2vmn",
+        "template_5wntkvr",
         e.target,
-        'user_xKjnEiz2TrzHygDYVtChk'
+        "user_xKjnEiz2TrzHygDYVtChk"
       );
       if (res.status == 200) {
         setAlert({
           ...alert,
-          message: 'Message sent successfully',
-          type: 'success',
+          message: "Message sent successfully",
+          type: "success",
         });
         setShowAlert(true);
-        e.target.name.value = '';
-        e.target.email.value = '';
-        e.target.phone.value = '';
-        e.target.message.value = '';
+        e.target.name.value = "";
+        e.target.email.value = "";
+        e.target.phone.value = "";
+        e.target.message.value = "";
       } else {
         setAlert({
           ...alert,
-          message: 'Error sending email',
-          type: 'error',
+          message: "Error sending email",
+          type: "error",
         });
         setShowAlert(true);
       }
     } catch (err) {
       setAlert({
         ...alert,
-        message: 'Error sending email',
-        type: 'error',
+        message: "Error sending email",
+        type: "error",
       });
       setShowAlert(true);
     }
