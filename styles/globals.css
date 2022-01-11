@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
   padding: 0;
@@ -29,7 +29,7 @@ html {
   );
 }
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   overflow-x: hidden !important;
   overflow-y: scroll;
   max-width: 100vw;
@@ -323,7 +323,7 @@ nav {
   text-align: center;
 }
 .section-content .field .icon {
-max-width: 250px;
+  max-width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -556,7 +556,7 @@ max-width: 250px;
 .contact .contact-vector .vector-image {
   width: 100%;
   height: 20rem;
-  background: url('../images/vector_contact.png');
+  background: url("../images/vector_contact.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -640,7 +640,7 @@ form textarea {
 }
 textarea::placeholder,
 input::placeholder {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 form input:focus,
 form textarea:focus {
@@ -771,7 +771,7 @@ footer i {
 }
 
 .projects::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -781,7 +781,7 @@ footer i {
   clip-path: circle(20% at right 70%);
 }
 .projects::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

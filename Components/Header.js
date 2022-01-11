@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import ccr from "../images/photo_Cropped.jpg";
+import ccr from "../images/me.jpeg";
 import arrow from "../images/arrow.png";
 import Particles from "react-particles-js";
 import init from "./Typewriter";
