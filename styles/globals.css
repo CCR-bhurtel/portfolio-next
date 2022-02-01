@@ -265,7 +265,6 @@ nav {
 /* -------------------------Specialization---------------------- */
 .specializations {
   position: relative;
-  min-height: 100vh;
   width: 100vw;
   background: linear-gradient(
     to right,
@@ -370,7 +369,6 @@ nav {
 /* -----------------------------counter------------------ */
 .middle {
   width: 100%;
-  margin-bottom: 10px;
 }
 .counting-sec {
   padding: 20px 0;
@@ -413,10 +411,9 @@ nav {
 #about {
   background: #d2dbdb;
   width: 100vw;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 #about .container {
@@ -549,10 +546,20 @@ nav {
 .contact {
   width: 100%;
   /* margin-top: 10vh; */
+  margin-top: 0 !important;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    #2a363f,
+    #4f5c63,
+    #778488,
+    #a3afb1,
+    #d2dbdb
+  );
 }
 .contact .contact-vector {
   min-width: 100vw;
