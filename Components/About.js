@@ -25,8 +25,8 @@ function About(props) {
             </div>
             <h3 className="about-text-head">Who's this guy?</h3>
             <p className="about-text">
-              I am a full stack developer at{" "}
-              <span className="green-text">GigaTech</span> , Los Angeles.
+              I am a full stack developer from
+              <span className="green-text"> Kathmandu, Nepal.</span>
               <br /> I have a passion in web programming, app development, Ui
               designs,
               <br /> and Similarly in machine learning. <br />

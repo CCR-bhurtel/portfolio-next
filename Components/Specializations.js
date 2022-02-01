@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import backend from "../images/icons/backend.svg";
-import frontend from "../images/icons/frontend.svg";
+import backend from "../images/icons/backend.png";
+import frontend from "../images/icons/frontend.png";
 import logos from "../images/icons/logos.svg";
-import uiux from "../images/icons/uiux.svg";
-import webapp from "../images/icons/webapp.svg";
+import uiux from "../images/icons/ui.png";
+import webapp from "../images/icons/webapp.png";
 import Image from "next/image";
 
 function Specializations(props) {
@@ -26,7 +26,7 @@ function Specializations(props) {
           <div className="section-content">
             <div className="field">
               <div className="icon">
-                <Image src={frontend} alt="desktop-icon" />
+                <i className="fas fa-laptop-code"></i>
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEB FRONTEND</h4>
@@ -38,7 +38,7 @@ function Specializations(props) {
             </div>
             <div className="field">
               <div className="icon">
-                <Image src={backend} alt="desktop-icon" />
+                <i className="fab fa-node-js"></i>
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEB BACKEND</h4>
@@ -50,7 +50,7 @@ function Specializations(props) {
             </div>{" "}
             <div className="field">
               <div className="icon">
-                <Image src={uiux} alt="desktop-icon" />
+                <i className="fas fa-pen-nib"></i>
               </div>
               <div className="field-content">
                 <h4 className="field-title">UI/UX DESIGN</h4>
@@ -62,7 +62,7 @@ function Specializations(props) {
             </div>{" "}
             <div className="field">
               <div className="icon">
-                <Image src={webapp} alt="desktop-icon" />
+                <i className="fas fa-project-diagram"></i>
               </div>
               <div className="field-content">
                 <h4 className="field-title">WEBAPP DEV.</h4>
@@ -72,7 +72,7 @@ function Specializations(props) {
                 </p>
               </div>
             </div>{" "}
-            <div className="field">
+            {/* <div className="field">
               <div className="icon">
                 <Image src={logos} alt="desktop-icon" />
               </div>
@@ -83,7 +83,7 @@ function Specializations(props) {
                   design,.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
