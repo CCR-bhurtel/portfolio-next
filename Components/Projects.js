@@ -18,6 +18,12 @@ function Projects(props) {
       link: "http://www.rolacon.com",
     },
     {
+      projectName: "Ecstatic Paradox",
+      description:
+        "An organization management system made with combo of  Django wagtail, Django rest framework and Reactjs.",
+      link: "https://ecstaticparadox.com",
+    },
+    {
       projectName: "Goaly",
       description:
         "A hungarian site for procastinators. Add your goal, Add your paying amount, complete your goal.",
@@ -64,12 +70,6 @@ function Projects(props) {
       description: "Simple landing page with some amazing animatons",
       image: "miro.png",
       link: "https://nifty-borg-8bef88.netlify.app/",
-    },
-    {
-      projectName: "Landing Page",
-      description: "Landing Page for a hiking site, ",
-      image: "landing_page.png",
-      link: "https://quirky-neumann-4fd4ce.netlify.app/",
     },
   ]);
   const [minLength, setMinLength] = useState(4);

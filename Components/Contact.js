@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import vector from "../images/vector_contact.png";
-import dev from "../images/developer_sitting.png";
+import dev from "../images/developer_sitting.svg";
 import Alert from "./Alert";
 import * as emailjs from "emailjs-com";
 import Image from "next/image";

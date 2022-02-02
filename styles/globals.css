@@ -546,7 +546,7 @@ nav {
 .contact {
   width: 100%;
   /* margin-top: 10vh; */
-  margin-top: 0 !important;
+  margin-top: -2 !important;
   padding-top: 0;
   display: flex;
   flex-direction: column;
