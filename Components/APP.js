@@ -62,11 +62,11 @@ function App() {
       let thresholdHeight;
 
       if (W <= 1440) {
-        thresholdHeight = 1650;
+        thresholdHeight = 1600;
       } else if (W < 1024) {
-        thresholdHeight = 1809;
+        thresholdHeight = 1750;
       } else if (W < 425) {
-        thresholdHeight = 2350;
+        thresholdHeight = 2300;
       }
       if (Y > thresholdHeight) {
         const skillBar = document.querySelectorAll(".skill_level");
