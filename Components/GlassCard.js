@@ -9,7 +9,7 @@ function GlassCard(props) {
         <h2 className="nameFront">{projectName}</h2>
 
         <div className="cardContent">
-          <h2>{index < 10 ? `0${index + 1}` : index + 1}</h2>
+          <h2>{index < 9 ? `0${index + 1}` : index + 1}</h2>
           <h3>{projectName}</h3>
           <p>{description}</p>
           <a rel="noreferrer" target="_blank" href={link}>
