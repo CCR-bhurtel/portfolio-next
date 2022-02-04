@@ -64,8 +64,6 @@ function App() {
         var revealPoint = 150;
         if (revealTop < windowHeight - revealPoint) {
           reveal.classList.add("active");
-        } else {
-          reveal.classList.remove("active");
         }
       });
     };
