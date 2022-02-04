@@ -56,7 +56,22 @@ function App() {
       document.querySelector("body").style.overflow = "scroll";
     };
 
+    const reveal = () => {
+      const reveals = document.querySelectorAll(".reveal");
+      reveals.forEach((reveal) => {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveal.getBoundingClientRect().top;
+        var revealPoint = 150;
+        if (revealTop < windowHeight - revealPoint) {
+          reveal.classList.add("active");
+        } else {
+          reveal.classList.remove("active");
+        }
+      });
+    };
+
     document.addEventListener("scroll", () => {
+      reveal();
       const Y = window.scrollY;
       const W = window.scrollX;
       let thresholdHeight;

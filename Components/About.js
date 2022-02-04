@@ -13,7 +13,7 @@ function About(props) {
   }, []);
   return (
     <section id="about">
-      <div className="container">
+      <div className="container reveal">
         <div className="about-title">
           <h3 className="about-head">About</h3>
           <div className="bar"></div>

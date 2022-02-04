@@ -17,7 +17,7 @@ function Specializations(props) {
   return (
     <section id="spe" className="specializations">
       <div className="layer"></div>
-      <div className="container">
+      <div className="container reveal">
         <div className="content">
           <div className="section-title">
             <h5 className="section-subhead">This is what I do</h5>

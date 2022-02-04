@@ -93,7 +93,7 @@ function Projects(props) {
         <div className="project-bar"></div>
       </div>
 
-      <div className="pcontainer">
+      <div className="pcontainer reveal">
         {newProjects.map((project, index) => {
           return (
             <GlassCard key={index} projectDetails={{ ...project, index }} />

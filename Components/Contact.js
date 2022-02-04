@@ -69,7 +69,7 @@ function Contact(props) {
       </div>
 
       <div className="contact-body">
-        <div className="contact-section">
+        <div className="contact-section reveal">
           <div className="form-image">
             <Image src={dev} alt="Developer" />
           </div>

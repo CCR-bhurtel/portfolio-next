@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function Counter() {
   return (
     <section className="middle" id="#contact">
       <div className="counting-sec">
-        <div className="inner-width">
+        <div className="inner-width reveal">
           <div className="col">
             <i className="fas fa-coffee"></i>
             <div className="number num">500</div>

@@ -43,6 +43,16 @@ body {
   height: 100vh;
   background: #ffffff;
 }
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+  z-index: 100;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 a {
   text-decoration: none;
