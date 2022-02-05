@@ -109,7 +109,7 @@ function App() {
       });
     }
 
-    let toggleNavStyle = (e) => {
+    let toggleStyle = (e) => {
       e.style.position = "fixed";
       e.style.background = "#2a363f";
 
@@ -142,7 +142,7 @@ function App() {
       const e = document.querySelector("nav");
 
       if (Y >= 840) {
-        toggleNavStyle(e);
+        toggleStyle(e);
       } else {
         e.style = null;
       }
