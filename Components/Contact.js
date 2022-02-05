@@ -59,7 +59,7 @@ function Contact(props) {
     setTimeout(() => setShowAlert(false), 2000);
   };
   return (
-    <div id="contact" className="contact">
+    <div id="contact" className="contact toggleOption contactwala">
       <div className="contact-vector">
         <div className="vector-image"></div>
         <div className="contact-title">

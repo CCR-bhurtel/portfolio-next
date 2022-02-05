@@ -61,6 +61,7 @@ function App() {
       reveals.forEach((reveal) => {
         var windowHeight = window.innerHeight;
         var revealTop = reveal.getBoundingClientRect().top;
+        var revealBottom = reveal.getBoundingClientRect().bottom;
         var revealPoint = 150;
         if (revealTop < windowHeight - revealPoint) {
           reveal.classList.add("active");
@@ -68,8 +69,62 @@ function App() {
       });
     };
 
+    function checkNavLink() {
+      const home = document.querySelector("#homelink");
+      const about = document.querySelector("#aboutlink");
+      const contact = document.querySelector("#contactlink");
+      const project = document.querySelector("#projectlink");
+
+      const toggleOptions = document.querySelectorAll(".toggleOption");
+      toggleOptions.forEach((toggleOption) => {
+        var windowHeight = window.innerHeight;
+        var revealTop = toggleOption.getBoundingClientRect().top;
+        var revealPoint = 150;
+
+        const classList = toggleOption.classList;
+        if (revealTop < windowHeight - revealPoint) {
+          switch (classList[2]) {
+            case "homewala":
+              toggleActiveState(home);
+              break;
+            case "aboutwala":
+              toggleActiveState(about);
+              const skillBar = document.querySelectorAll(".skill_level");
+              skillBar.forEach((el) => {
+                if (!el.classList.contains("animation")) {
+                  const skillPercentage = el.classList[el.classList.length - 1];
+                  el.classList.add("animation");
+                  el.classList.add(`animation${skillPercentage}`);
+                }
+              });
+              break;
+            case "projectwala":
+              toggleActiveState(project);
+              break;
+            case "contactwala":
+              toggleActiveState(contact);
+              break;
+          }
+        }
+      });
+    }
+
+    let toggleNavStyle = (e) => {
+      e.style.position = "fixed";
+      e.style.background = "#2a363f";
+
+      e.style.zIndex = 100000;
+      e.style.left = "0";
+      e.style.top = "0";
+
+      e.style.marginRight = "20px";
+      e.style.paddingLeft = "20px";
+      e.style.justifyContent = "space-around";
+    };
+
     document.addEventListener("scroll", () => {
       reveal();
+      checkNavLink();
       const Y = window.scrollY;
       const W = window.scrollX;
       let thresholdHeight;
@@ -82,43 +137,12 @@ function App() {
         thresholdHeight = 2100;
       }
       if (Y > thresholdHeight) {
-        const skillBar = document.querySelectorAll(".skill_level");
-        skillBar.forEach((el) => {
-          if (!el.classList.contains("animation")) {
-            const skillPercentage = el.classList[el.classList.length - 1];
-            el.classList.add("animation");
-            el.classList.add(`animation${skillPercentage}`);
-          }
-        });
       }
-
-      const home = document.querySelector("#homelink");
-      const about = document.querySelector("#aboutlink");
-      const contact = document.querySelector("#contactlink");
-      const project = document.querySelector("#project");
 
       const e = document.querySelector("nav");
 
-      let toggleStyle = (e) => {
-        e.style.position = "fixed";
-        e.style.background = "#2a363f";
-
-        e.style.zIndex = 100000;
-        e.style.left = "0";
-        e.style.top = "0";
-
-        e.style.marginRight = "20px";
-        e.style.paddingLeft = "20px";
-        e.style.justifyContent = "space-around";
-      };
-
-      if (Y >= 0 && Y < 860) {
-        toggleActiveState(home);
-      } else if (Y > 863 && Y < 1392) {
-        toggleActiveState(about);
-      }
       if (Y >= 840) {
-        toggleStyle(e);
+        toggleNavStyle(e);
       } else {
         e.style = null;
       }

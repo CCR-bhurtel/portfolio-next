@@ -17,7 +17,7 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div id="header">
+      <div id="header" className="hello toggleOption homewala">
         <div className="container">
           <Navbar />
           <div className="header-content">

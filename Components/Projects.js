@@ -87,7 +87,7 @@ function Projects(props) {
     }));
   }, []);
   return (
-    <div className="projects" id="projects">
+    <div className="projects toggleOption projectwala" id="projects">
       <div className="project-title">
         <h3 className="project-head">Projects</h3>
         <div className="project-bar"></div>

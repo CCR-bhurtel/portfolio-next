@@ -12,7 +12,7 @@ function About(props) {
     }));
   }, []);
   return (
-    <section id="about">
+    <section id="about" className="hello toggleOption aboutwala">
       <div className="container reveal">
         <div className="about-title">
           <h3 className="about-head">About</h3>
