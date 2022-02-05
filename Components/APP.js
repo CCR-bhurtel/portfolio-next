@@ -85,10 +85,10 @@ function App() {
         if (revealTop < windowHeight - revealPoint) {
           switch (classList[2]) {
             case "homewala":
-              toggleActiveState(home);
+              // toggleActiveState(home);
               break;
             case "aboutwala":
-              toggleActiveState(about);
+              // toggleActiveState(about);
               const skillBar = document.querySelectorAll(".skill_level");
               skillBar.forEach((el) => {
                 if (!el.classList.contains("animation")) {
@@ -99,10 +99,10 @@ function App() {
               });
               break;
             case "projectwala":
-              toggleActiveState(project);
+              // toggleActiveState(project);
               break;
             case "contactwala":
-              toggleActiveState(contact);
+              // toggleActiveState(contact);
               break;
           }
         }
