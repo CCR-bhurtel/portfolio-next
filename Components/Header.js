@@ -7,14 +7,6 @@ import init from "./Typewriter";
 import Image from "next/image";
 
 class Header extends React.Component {
-  componentDidMount() {
-    init();
-    this.props.setLoading_states({
-      ...this.props.loading_states,
-      headerLoaded: true,
-    });
-    console.log("header", this.props);
-  }
   render() {
     return (
       <div id="header" className="hello toggleOption homewala">

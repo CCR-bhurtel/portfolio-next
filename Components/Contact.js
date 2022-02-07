@@ -12,13 +12,6 @@ function Contact(props) {
     type: "error",
   });
 
-  useEffect(() => {
-    console.log("contact", props);
-    props.setLoading_states((props) => ({
-      ...props.loading_states,
-      contactsLoaded: true,
-    }));
-  }, []);
   const submit_form = async (e) => {
     e.preventDefault();
 

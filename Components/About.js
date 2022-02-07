@@ -3,14 +3,7 @@ import ccr from "../images/photo_Cropped.jpg";
 
 import Image from "next/image";
 
-function About(props) {
-  console.log();
-  useEffect(() => {
-    props.setLoading_states((props) => ({
-      ...props.loading_states,
-      aboutLoaded: true,
-    }));
-  }, []);
+function About(ppppp) {
   return (
     <section id="about" className="hello toggleOption aboutwala">
       <div className="container reveal">

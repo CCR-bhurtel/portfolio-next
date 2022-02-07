@@ -79,13 +79,7 @@ function Projects(props) {
 
   const showMore = () => setProjectLength(projects.length);
   const showLess = () => setProjectLength(minLength);
-  useEffect(() => {
-    console.log("projects", props);
-    props.setLoading_states((props) => ({
-      ...props.loading_states,
-      projectsLoaded: true,
-    }));
-  }, []);
+
   return (
     <div className="projects toggleOption projectwala" id="projects">
       <div className="project-title">

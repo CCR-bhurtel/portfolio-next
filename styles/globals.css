@@ -76,6 +76,7 @@ a {
   width: 100%;
   position: relative;
   padding-bottom: 10vh;
+  overflow-x: hidden;
 }
 
 .particles {

@@ -7,13 +7,6 @@ import webapp from "../images/icons/webapp.png";
 import Image from "next/image";
 
 function Specializations(props) {
-  useEffect(() => {
-    console.log("specialization", props);
-    props.setLoading_states((props) => ({
-      ...props.loading_states,
-      specializationsLoaded: true,
-    }));
-  }, []);
   return (
     <section id="spe" className="specializations">
       <div className="layer"></div>
