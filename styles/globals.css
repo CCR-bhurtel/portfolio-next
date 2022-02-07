@@ -423,7 +423,7 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding: 30px 20px;
+  padding: 2rem 20px 5rem 20px;
 }
 
 #about .container {
@@ -1248,7 +1248,6 @@ footer i {
 @media screen and (max-width: 425px) {
   .cardContainer .card {
     width: 90%;
-    height: 80%;
   }
   .cardContainer {
     margin-right: 30px;
