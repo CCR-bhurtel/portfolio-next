@@ -108,16 +108,24 @@ class App extends Component {
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
+          <meta name="robots" content="index, follow" />
           <meta
             name="description"
-            content="Personal portfolio site, Shishir Bhurtel (cceer bhurtel) is a mern stack developer at gigatech, Nepal. He is a freelance full stack developer at fiverr,  with good knowledge of Node.js, react.js, express.js, mongodb, sql, microservices etc"
+            content="Shishir Bhurtel, full stack developer from Butwal, Nepal. Personal Portfolio Site. SkillSet:- Node.js, react.js, express.js, mongodb, sql, microservices, python, redux.js, MVC, Ajax, html, css, javascript etc"
           />
-          <meta name="robots" content="noindex, nofollow" />
-          <meta name="googlebot" content="noindex, nofollow" />
           <meta
             name="keywords"
-            content="shishir, bhurtel, developer, web developer, full stack developer, mern stack developer, node.js, react.js, react, node, cceer bhurtel, cceer, ccr"
+            content="shishir, bhurtel, shishir bhurtel, developer, web developer, full stack developer, mern stack developer, node.js, react.js, react, node, cceer bhurtel, cceer, ccr, developer from nepal, "
           />
+          <meta
+            name="og:title"
+            content="Shishir Bhurtel | Full Stack Developer"
+          />
+          <meta name="og:url" content="https://www.shishirbhurtel.com.np/" />
+
+          <link rel="canonical" href="https://www.shishirbhurtel.com.np/" />
           <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
           <link
             rel="icon"
