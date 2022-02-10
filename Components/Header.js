@@ -7,6 +7,9 @@ import init from "./Typewriter";
 import Image from "next/image";
 
 class Header extends React.Component {
+  componentDidMount() {
+    init();
+  }
   render() {
     return (
       <div id="header" className="hello toggleOption homewala">
