@@ -1,5 +1,5 @@
 class TypeWriter {
-  constructor(txtElement, words, wait = 3000) {
+  constructor(txtElement, words, wait = 2000) {
     this.txtElement = txtElement;
     this.words = words;
     this.txt = "";
@@ -28,10 +28,10 @@ class TypeWriter {
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
     // Initial Type Speed
-    let typeSpeed = 300;
+    let typeSpeed = 200;
 
     if (this.isDeleting) {
-      typeSpeed /= 2;
+      typeSpeed /= 3;
     }
 
     if (!this.isDeleting && this.txt === fullTxt) {
@@ -54,10 +54,10 @@ class TypeWriter {
 // Init App
 function init() {
   const txtElement = document.querySelector(".txt-type");
-  const words = ["Developer", "Designer", "Freelancer"];
+  const words = ["Developer", "UI Designer", "Coffee Lover", "Dreamer"];
 
   // Init TypeWriter
-  new TypeWriter(txtElement, words, 3000);
+  new TypeWriter(txtElement, words, 2000);
 }
 
 export default init;

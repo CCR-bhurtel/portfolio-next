@@ -30,7 +30,7 @@ class Header extends React.Component {
                 A{" "}
                 <span
                   className="txt-type"
-                  data-words='["Developer", "Designer", "FreeLancer"]'
+                  data-words='["FullStack Developer", "Designer", "FreeLancer", "Javascript Enthusiast"]'
                 ></span>
               </div>
             </h3>

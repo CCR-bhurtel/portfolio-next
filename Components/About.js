@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ccr from "../images/photo_Cropped.jpg";
+import ccr from "../images/developerSitting.jpg";
 
 import Image from "next/image";
 

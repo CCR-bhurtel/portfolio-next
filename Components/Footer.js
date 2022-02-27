@@ -1,7 +1,6 @@
-import React from 'react';
-import logo from '../images/brand-logo.png';
-import Image from 'next/image';
-
+import React from "react";
+import logo from "../images/brand-logo.png";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -27,14 +26,22 @@ const Footer = () => {
               >
                 <i className="fab fa-facebook-square"></i>
               </a>
+              <a
+                href="https://github.com/CCR-bhurtel"
+                target="blank"
+                className="sa-link"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/shishir-bhurtel-54974b1b7/"
+                target="blank"
+                className="sa-link"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
               <a href="#" className="sa-link">
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="sa-link">
-                <i className="fab fa-pinterest"></i>
-              </a>
-              <a href="#" className="sa-link">
-                <i className="fab fa-tripadvisor"></i>
               </a>
             </div>
           </div>

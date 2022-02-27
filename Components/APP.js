@@ -33,7 +33,6 @@ class App extends Component {
         reveals.forEach((reveal) => {
           var windowHeight = window.innerHeight;
           var revealTop = reveal.getBoundingClientRect().top;
-          var revealBottom = reveal.getBoundingClientRect().bottom;
           var revealPoint = 150;
           if (revealTop < windowHeight - revealPoint) {
             reveal.classList.add("active");
@@ -103,44 +102,7 @@ class App extends Component {
       console.log(err);
     }
     return (
-      <div>
-        <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#000000" />
-          <meta httpEquiv="Content-Type" content="text/html; charSet=utf-8" />
-          <meta name="language" content="English" />
-          <meta name="robots" content="index, follow" />
-          <meta
-            name="description"
-            content="Shishir Bhurtel, full stack developer from Butwal, Nepal. Personal Portfolio Site. SkillSet:- Node.js, react.js, express.js, mongodb, sql, microservices, python, redux.js, MVC, Ajax, html, css, javascript etc"
-          />
-          <meta
-            name="keywords"
-            content="shishir, bhurtel, shishir bhurtel, developer, web developer, full stack developer, mern stack developer, node.js, react.js, react, node, cceer bhurtel, cceer, ccr, developer from nepal, "
-          />
-          <meta
-            name="og:title"
-            content="Shishir Bhurtel | Full Stack Developer"
-          />
-          <meta name="og:url" content="https://www.shishirbhurtel.com.np/" />
-
-          <link rel="canonical" href="https://www.shishirbhurtel.com.np/" />
-          <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
-          <link
-            rel="icon"
-            type="image/png"
-            href="../src/images/logo_background.png"
-          />
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-          />
-
-          <title>
-            Shishir Bhurtel | Full Stack Developer -Web Developer at gigatech
-          </title>
-        </Head>
+      <>
         <div className="content">
           {this.state.loading ? (
             <div className="loading_screen">
@@ -151,6 +113,7 @@ class App extends Component {
               <Header />
               <Specializations />
               <About />
+              {/* <Skills /> */}
               <Projects />
               <Counter />
               <Contact />
@@ -158,7 +121,7 @@ class App extends Component {
             </div>
           )}
         </div>
-      </div>
+      </>
     );
   }
 }
