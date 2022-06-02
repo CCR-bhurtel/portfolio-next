@@ -44,26 +44,19 @@ function Projects(props) {
       link: "https://notion-template-store.vercel.app/",
     },
     {
+      projectName: "Dividend Tracker",
+      description:
+        "Add, buy and watch stocks. Claim free stocks available in the market. Manage your stocks more efficiently. ",
+      link: "https://mdt-app.vercel.app/",
+    },
+    {
       projectName: "Travelix",
       description:
         "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
       image: "travelix.png",
       link: "https://technext.github.io/travelix/index.html",
     },
-    {
-      projectName: "Natours",
-      description:
-        "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
-      image: "natours.png",
-      link: "https://natours.netlify.app/",
-    },
-    {
-      projectName: "Receipe Blog",
-      description:
-        "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
-      image: "dailyReceipe.png",
-      link: "https://dailyrecipesblog.com/",
-    },
+
     {
       projectName: "Tour Nepal",
       description:
