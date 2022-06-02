@@ -38,6 +38,12 @@ function Projects(props) {
       link: "https://electrostatics.netlify.app/",
     },
     {
+      projectName: "Notion Template Store",
+      description:
+        "Get different ready made notion templates for different tasks in economic price. ",
+      link: "https://notion-template-store.vercel.app/",
+    },
+    {
       projectName: "Travelix",
       description:
         "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
