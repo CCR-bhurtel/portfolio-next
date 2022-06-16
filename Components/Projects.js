@@ -41,7 +41,7 @@ function Projects(props) {
       projectName: "Notion Template Store",
       description:
         "Get different ready made notion templates for different tasks in economic price. ",
-      link: "https://notion-template-store.vercel.app/",
+      link: "https://unlockplaybook.com/",
     },
     {
       projectName: "Dividend Tracker",
