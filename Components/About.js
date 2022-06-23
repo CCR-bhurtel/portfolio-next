@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function About(ppppp) {
   return (
-    <section id="about" className="hello toggleOption aboutwala">
+    <section id="about" className="">
       <div className="container reveal">
         <div className="about-title">
           <h3 className="about-head">About</h3>

@@ -13,12 +13,39 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div id="header" className="hello toggleOption homewala">
+      <div id="header" className="toggleOption">
         <div className="container">
           <Navbar />
           <div className="header-content">
             <div className="my-image-container">
               <Image className="myimg" src={ccr} alt="Me" />
+            </div>
+
+            <div className="social-container">
+              <a
+                href="https://www.facebook.com/bhurtelbro11/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <i className="fab fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://github.com/CCR-bhurtel"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/shishir-bhurtel-54974b1b7/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
             </div>
 
             <h3 className="header-text">
