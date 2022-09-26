@@ -31,6 +31,13 @@ function Projects(props) {
       link: "https://www.goaly.hu/",
     },
     {
+      projectName: "Find Presentation",
+      description:
+        "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
+      image: "tourNepal.png",
+      link: "https://poetic-mermaid-76ff0a.netlify.app/",
+    },
+    {
       projectName: "Electrostatics",
       description:
         "A simple elctrostatics model with various modules such as induction and conduction, circular motion of charge, dipole moment etc. It is built in p5.js, vanilla javascript, html and css.",
@@ -57,13 +64,6 @@ function Projects(props) {
       link: "https://technext.github.io/travelix/index.html",
     },
 
-    {
-      projectName: "Tour Nepal",
-      description:
-        "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
-      image: "tourNepal.png",
-      link: "https://www.toursnepal.com/",
-    },
     {
       projectName: "Animated Landing",
       description: "Simple landing page with some amazing animatons",
