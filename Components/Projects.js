@@ -12,32 +12,6 @@ function Projects(props) {
       link: "https://fanorona-game.netlify.app",
     },
     {
-      projectName: "ROLACON",
-      description:
-        "Rolacon, is an audit firm in nepal, delivering accounting and finance needs for your business including bookkeeping, business and financial planning, auditing and tax consulting, company registration. ",
-      link: "http://www.rolacon.com",
-    },
-    {
-      projectName: "Ecstatic Paradox",
-      description:
-        "An organization management system made with combo of  Django wagtail, Django rest framework and Reactjs.",
-      link: "https://ecstaticparadox.com",
-    },
-    {
-      projectName: "Goaly",
-      description:
-        "A hungarian site for procastinators. Add your goal, Add your paying amount, complete your goal.",
-      image: "ntg.png",
-      link: "https://www.goaly.hu/",
-    },
-    {
-      projectName: "Find Presentation",
-      description:
-        "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
-      image: "tourNepal.png",
-      link: "https://poetic-mermaid-76ff0a.netlify.app/",
-    },
-    {
       projectName: "Electrostatics",
       description:
         "A simple elctrostatics model with various modules such as induction and conduction, circular motion of charge, dipole moment etc. It is built in p5.js, vanilla javascript, html and css.",
@@ -56,6 +30,38 @@ function Projects(props) {
         "Add, buy and watch stocks. Claim free stocks available in the market. Manage your stocks more efficiently. ",
       link: "https://mdt-app.vercel.app/",
     },
+    {
+      projectName: "ROLACON",
+      description:
+        "Rolacon, is an audit firm in nepal, delivering accounting and finance needs for your business including bookkeeping, business and financial planning, auditing and tax consulting, company registration. ",
+      link: "http://www.rolacon.com",
+    },
+    {
+      projectName: "Ecstatic Paradox",
+      description:
+        "An organization management system made with combo of  Django wagtail, Django rest framework and Reactjs.",
+      link: "https://ecstaticparadox.com",
+    },
+    {
+      projectName: "Paaila Nepal Surgical",
+      description: "Landing page of surgical equipments dealer.",
+      link: "https://paaila-nepal.vercel.app/",
+    },
+    {
+      projectName: "Goaly",
+      description:
+        "A hungarian site for procastinators. Add your goal, Add your paying amount, complete your goal.",
+      image: "ntg.png",
+      link: "https://www.goaly.hu/",
+    },
+    {
+      projectName: "Find Presentation",
+      description:
+        "Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!",
+      image: "tourNepal.png",
+      link: "https://poetic-mermaid-76ff0a.netlify.app/",
+    },
+
     {
       projectName: "Travelix",
       description:
