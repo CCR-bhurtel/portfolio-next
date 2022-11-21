@@ -31,6 +31,12 @@ function Projects(props) {
       link: "https://mdt-app.vercel.app/",
     },
     {
+      projectName: "Tic Tac Toe Game",
+      description:
+        "Currently offline (multiplayer on development) tic tac toe game build on next.js.",
+      link: "https://tictactoe-ebon-ten.vercel.app/",
+    },
+    {
       projectName: "ROLACON",
       description:
         "Rolacon, is an audit firm in nepal, delivering accounting and finance needs for your business including bookkeeping, business and financial planning, auditing and tax consulting, company registration. ",
