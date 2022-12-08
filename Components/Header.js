@@ -69,7 +69,7 @@ class Header extends React.Component {
                 </button>
               </a>
               <a
-                href="https://www.fiverr.com/shishrbhurtel1/be-your-front-end-react-developer"
+                href="https://www.fiverr.com/shishrbhurtel1?public_mode=true"
                 target="blank"
               >
                 {" "}

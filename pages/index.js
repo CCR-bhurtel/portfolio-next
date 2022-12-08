@@ -25,7 +25,7 @@ function Index() {
           content="Shishir Bhurtel | Full Stack Developer"
         />
         <meta name="og:url" content="https://www.shishirbhurtel.com.np/" />
-        <meta name="og:image" content="https://www.shishirbhurtel.com.np/images/me.jpeg" />
+        <meta name="og:image" content="https://www.shishirbhurtel.com.np/me.jpeg" />
 
         <link rel="canonical" href="https://www.shishirbhurtel.com.np/" />
         <link rel="shortcut icon" type="image/jpg" href="./favicon.ico" />
