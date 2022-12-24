@@ -49,6 +49,16 @@ function Projects(props) {
       link: "https://ecstaticparadox.com",
     },
     {
+      projectName: "One Page",
+      description: "Shopify templete theme for sale.",
+      link: "https://onepage-eosin.vercel.app/",
+    },
+    {
+      projectName: "Autonomous",
+      description: "The automated newsletter site built with next.js",
+      link: "https://autonomous-three.vercel.app/",
+    },
+    {
       projectName: "Paaila Nepal Surgical",
       description: "Landing page of surgical equipments dealer.",
       link: "https://paaila-nepal.vercel.app/",
