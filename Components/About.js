@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
-import ccr from "../images/developerSitting.jpg";
+import ccr from "../images/avatar.png";
 
 import Image from "next/image";
 
