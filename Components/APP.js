@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Projects from "./Projects";
 import Specializations from "./Specializations";
-import loading from "../images/loading.gif";
+import loading from "../public/images/loading.gif";
 import Head from "next/head";
 import Image from "next/image";
 

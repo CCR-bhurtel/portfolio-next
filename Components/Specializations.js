@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import backend from "../images/icons/backend.png";
-import frontend from "../images/icons/frontend.png";
-import logos from "../images/icons/logos.svg";
-import uiux from "../images/icons/ui.png";
-import webapp from "../images/icons/webapp.png";
+import backend from "../public/images/icons/backend.png";
+import frontend from "../public/images/icons/frontend.png";
+import logos from "../public/images/icons/logos.svg";
+import uiux from "../public/images/icons/ui.png";
+import webapp from "../public/images/icons/webapp.png";
 import Image from "next/image";
 
 function Specializations(props) {

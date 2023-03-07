@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import logo from "../images/brand-logo.png";
+import logo from "../public/images/brand-logo.png";
 import React from "react";
 import Image from "next/image";
 

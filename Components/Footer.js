@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/brand-logo.png";
+import logo from "../public/images/brand-logo.png";
 import Image from "next/image";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-content-brand">
-            <a href="index.html" className="logo">
+            <a href="/" className="logo">
               <Image src={logo} alt="logo" className="logo-image" />
             </a>
             <p className="paragraph">Caffine to code converter</p>
