@@ -46,12 +46,7 @@ function Projects(props) {
                 'Rolacon, is an audit firm in nepal, delivering accounting and finance needs for your business including bookkeeping, business and financial planning, auditing and tax consulting, company registration. ',
             link: 'http://www.rolacon.com',
         },
-        {
-            projectName: 'Ecstatic Paradox',
-            description:
-                'An organization management system made with combo of  Django wagtail, Django rest framework and Reactjs.',
-            link: 'https://ecstaticparadox.com',
-        },
+       
         {
             projectName: 'One Page',
             description: 'Shopify templete theme for sale.',
@@ -67,13 +62,7 @@ function Projects(props) {
             description: 'Landing page of surgical equipments dealer.',
             link: 'https://paaila-nepal.vercel.app/',
         },
-        {
-            projectName: 'Goaly',
-            description:
-                'A hungarian site for procastinators. Add your goal, Add your paying amount, complete your goal.',
-            image: 'ntg.png',
-            link: 'https://www.goaly.hu/',
-        },
+     
         {
             projectName: 'Find Presentation',
             description:
@@ -87,7 +76,7 @@ function Projects(props) {
             description:
                 'Lorem ipsum dolor sit amet, consecteturadipisicing elit. Ducimus facere dolorum, quo perspiciatis delectus aliquid!',
             image: 'travelix.png',
-            link: 'https://technext.github.io/travelix/index.html',
+            link: 'https://themewagon.github.io/travelix/',
         },
 
         {
