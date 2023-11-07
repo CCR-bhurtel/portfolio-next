@@ -18,7 +18,7 @@ const Footer = () => {
                             <a href="#" className="sa-link">
                                 <i className="fab fa-twitter"></i>
                             </a>
-                            <a href="https://www.facebook.com/bhurtelbro11/" target="blank" className="sa-link">
+                            <a href="https://www.facebook.com/logicmaestro403/" target="blank" className="sa-link">
                                 <i className="fab fa-facebook-square"></i>
                             </a>
                             <a href="https://github.com/CCR-bhurtel" target="blank" className="sa-link">

@@ -33,7 +33,7 @@ function Header() {
                     </div>
 
                     <div className="social-container">
-                        <a href="https://www.facebook.com/bhurtelbro11/" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/logicmaestro403/" target="_blank" rel="noreferrer">
                             {' '}
                             <i className="fab fa-facebook"></i>
                         </a>
