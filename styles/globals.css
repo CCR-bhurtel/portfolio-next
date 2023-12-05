@@ -486,6 +486,57 @@ nav {
     position: relative;
 }
 
+.bubble {
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.1);
+    height: 152px;
+    margin-right: 20px;
+    position: absolute;
+    transition: opacity ease-in-out 1s;
+    width: 152px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bubbleBackground {
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bubbles {
+    overflow: hidden;
+    height: 600px;
+    width: 48vw;
+    position: absolute;
+}
+
+.bubbles-wrapper {
+    min-height: 600px;
+    position: relative;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.skill-1 {
+    background-position: -154px 0;
+}
+
+.skill-2 {
+    background-position: -308px 0;
+}
+
+.skill-3 {
+    background-position: -462px 0;
+}
+
 .about-right {
     display: flex;
     flex-direction: column;
@@ -1005,6 +1056,12 @@ footer i {
 }
 @media screen and (max-width: 768px) {
     /* For card */
+    .bubbles-wrapper {
+        width: 100vw;
+    }
+    .bubbles {
+        width: 100%;
+    }
 
     .nav-collection {
         position: absolute;
@@ -1170,7 +1227,7 @@ footer i {
     .about-content {
         display: grid;
         grid-template-columns: 1fr;
-        justify-content: center;
+        justify-content: space-between;
         grid-gap: 1rem;
         margin-top: 30px;
     }
