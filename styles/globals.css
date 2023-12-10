@@ -70,6 +70,10 @@ a {
     overflow: hidden;
 }
 
+#header {
+    background: #2a363f;
+}
+
 .particles {
     position: absolute;
     top: 0;

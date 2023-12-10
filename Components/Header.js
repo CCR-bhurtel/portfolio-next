@@ -6,23 +6,23 @@ import arrow from '../public/images/arrow.png';
 import Particles from 'react-tsparticles';
 import init from './Typewriter';
 import Image from 'next/image';
-import { loadFull } from 'tsparticles';
+// import { loadFull } from 'tsparticles';
 
 function Header() {
     useEffect(() => {
         init();
     }, []);
 
-    const particlesInit = useCallback(async (engine) => {
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        await loadFull(engine);
-    }, []);
+    // const particlesInit = useCallback(async (engine) => {
+    //     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    //     // starting from v2 you can add only the features you need reducing the bundle size
+    //     await loadFull(engine);
+    // }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
-    }, []);
+    // const particlesLoaded = useCallback(async (container) => {
+    //     await console.log(container);
+    // }, []);
     return (
         <div id="header" className="toggleOption">
             <div className="container">
@@ -78,7 +78,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <Particles
+            {/* <Particles
                 className="particles"
                 init={particlesInit}
                 loaded={particlesLoaded}
@@ -193,7 +193,7 @@ function Header() {
                     },
                     tmp: {},
                 }}
-            />
+            /> */}
         </div>
     );
 }
